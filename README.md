@@ -37,7 +37,8 @@ change the email HMTL in app/views/watcher_mailer/new_watcher.html.haml
 ## Other interesting things
 The heroku sendgrid add-on is used to send the emails from heroku  
 
-In development, run mailcatcher to see the content of the emails being sent
-```ruby
+In development, run mailcatcher to see the content of the emails being sent  
+
+```
 mailcatcher
 ```
