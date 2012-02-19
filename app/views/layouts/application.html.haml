@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    = yield :title
+    = yield :stylesheets
+    = csrf_meta_tags
+  %body
+    = yield :body
+    = yield :javascripts

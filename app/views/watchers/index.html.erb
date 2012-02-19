@@ -1,0 +1,8 @@
+Email,IP
+<%=
+  CSV.generate do |csv|
+    Watcher.all.each do |watcher|
+      csv << [watcher.email, watcher.ip]
+    end
+  end
+%>

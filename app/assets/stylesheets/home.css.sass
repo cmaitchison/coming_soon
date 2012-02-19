@@ -1,0 +1,113 @@
+*
+  padding: 0
+  margin: 0 auto
+
+html
+  height: 100%
+  overflow: hidden
+
+body
+  height: 100%
+  overflow: hidden
+  font-family: Tahoma, 'Lucida Grande', Arial, Helvetica, sans-serif
+  font-size: 14px
+
+.inner_tube
+  position: relative
+  width: 1000px
+  height: 100%
+
+.content
+  position: relative
+  float: right
+  top: 200px
+  width: 700px
+
+.container
+  margin-top: 50px
+
+a
+  text-decoration: none
+  outline: none
+  &:hover
+    text-decoration: underline
+
+div, p
+  color: #352e2c
+
+sup
+  font-size: 8px
+
+div.clear
+  clear: both
+
+#top-bar
+  height: 10px
+  background: #362f2d
+
+.content
+    
+  h2
+    position: absolute
+    width: 613px
+    height: 28px
+  p
+    margin: 10px 0
+
+#footer
+  position: absolute
+  bottom: 20px
+  width: 100%
+  text-align: center
+  font-size: 11px
+  color: #362f2d
+
+/*------------------------------------------------------------
+ *  Form
+ *------------------------------------------------------------
+
+form label
+  display: none
+
+input.text
+  float: left
+  border: none
+  width: 204px
+  height: 22px
+  padding: 6px 10px
+  background: url(frm-input.png)
+  font-size: 18px
+  color: #828282
+
+a#register_watcher_button
+  float: left
+  display: block
+  margin: 0 0 0 10px
+  width: 104px
+  height: 27px
+  padding-top: 7px
+  text-align: center
+  background: url(btn-notify.png)
+  color: #e5e5e5
+  cursor: pointer
+  &:hover
+    text-decoration: none
+    background-position: bottom
+
+div.watcher_registration
+  margin-top: 25px
+
+.notice
+  position: absolute
+  height: 22px
+  padding: 2px 0 0 30px
+  margin-top: 15px
+
+div.success
+  background: url(ico-check.png) no-repeat
+
+div.warning
+  background: url(ico-notice.png) no-repeat
+
+div.error
+  background: url(ico-cross.png) no-repeat

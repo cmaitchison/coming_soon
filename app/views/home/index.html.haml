@@ -1,0 +1,25 @@
+-content_for :title do
+  %title Coming Soon!
+  
+-content_for :stylesheets do
+  = stylesheet_link_tag    "application", :media => "all"
+  
+-content_for :javascripts do
+  = javascript_include_tag "home"
+
+- content_for :body do
+  #top-bar
+  .inner_tube
+    .content
+      %h2 Customise me...
+
+      .container
+        .watcher_registration
+          %form{:id => "register_watcher", :name => "register_watcher", :action => "/watchers", :method => "post"}
+            %label{:for => "email"} Email:
+            %input{:type => "text", :id => "register_watcher_email", :name => "email", :class => "text", :maxlength => 50}
+            %a{:id => "register_watcher_button", :href => '#'} Email me
+          .clear
+          #register_watcher_message
+    #footer
+      %p Coming soon in 2012
